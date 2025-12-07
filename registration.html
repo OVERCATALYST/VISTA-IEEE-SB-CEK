@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | VISTA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="./styles/registration.css"> 
+</head>
+<body class="registration-page">
+
+    <div class="blob bg-purple"></div>
+    <div class="blob bg-pink"></div>
+    <div class="blob bg-cyan"></div>
+
+    <nav class="navbar navbar-transparent" id="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo-link">
+                <img src="./assets/vista white.png" onerror="this.src='https://via.placeholder.com/150x50?text=VISTA'" alt="The VISTA" class="logo-image logo-white"> 
+                <img src="./assets/vista black.png" style="display:none;" alt="The VISTA" class="logo-image logo-black">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="venue.html" class="nav-item">Venue</a>
+                <a href="index.html#rewards" class="nav-item">Rewards</a>
+                <a href="#" class="nav-btn">Register</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-nav-header">
+            <button class="close-menu-btn" id="close-menu-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <a href="index.html" class="nav-item mobile-link">Home</a>
+        <a href="index.html#about" class="nav-item mobile-link">About</a>
+        <a href="venue.html" class="nav-item mobile-link">Venue</a>
+        <a href="index.html#rewards" class="nav-item mobile-link">Rewards</a>
+        <a href="#" class="nav-btn mobile-link">Register</a>
+    </div>
+
+    <main class="reg-main">
+        
+        <section class="reg-hero">
+            <div class="container">
+                <h1 class="page-title reveal">Get Your <span class="gradient-text">Pass</span></h1>
+                <p class="page-subtitle reveal reveal-delay-1">
+                    Choose your access level. Secure your official VISTA Identity.
+                </p>
+            </div>
+        </section>
+
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="pricing-grid">
+                    
+                    <div class="badge-card ias-card reveal">
+                        <div class="lanyard-clip"></div>
+                        <div class="badge-hole"></div>
+                        <div class="badge-header">
+                            <div class="badge-icon">
+                                <img src="./assets/ias_bw.png" 
+                                     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9e/IEEE_IAS.png'" 
+                                     alt="IEEE IAS Logo">
+                            </div>
+                            <h3>IEEE IAS Member</h3>
+                        </div>
+                        <div class="badge-body">
+                            <div class="price-tag">
+                                <span class="label">1 Day Access</span>
+                                <span class="amount">₹400</span>
+                            </div>
+                            <div class="price-tag">
+                                <span class="label">2 Day Access</span>
+                                <span class="amount">₹700</span>
+                            </div>
+                            <a href="#" class="badge-btn">Coming Soon</a>
+                        </div>
+                    </div>
+
+                    <div class="badge-card ieee-card reveal reveal-delay-1">
+                        <div class="lanyard-clip"></div>
+                        <div class="badge-hole"></div>
+                        <div class="badge-header">
+                            <div class="badge-icon">
+                                <img src="./assets/ieee blk.png" 
+                                     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/21/IEEE_logo.svg'" 
+                                     alt="IEEE Logo">
+                            </div>
+                            <h3>IEEE Member</h3>
+                        </div>
+                        <div class="badge-body">
+                            <div class="price-tag">
+                                <span class="label">1 Day Access</span>
+                                <span class="amount">₹600</span>
+                            </div>
+                            <div class="price-tag">
+                                <span class="label">2 Day Access</span>
+                                <span class="amount">₹1000</span>
+                            </div>
+                            <a href="#" class="badge-btn">Coming Soon</a>
+                        </div>
+                    </div>
+
+                    <div class="badge-card standard-card reveal reveal-delay-2">
+                        <div class="lanyard-clip"></div>
+                        <div class="badge-hole"></div>
+                        <div class="badge-header">
+                            <div class="badge-icon"><i class="fa-solid fa-user"></i></div>
+                            <h3>Non-IEEE Member</h3>
+                        </div>
+                        <div class="badge-body">
+                            <div class="price-tag">
+                                <span class="label">1 Day Access</span>
+                                <span class="amount">₹700</span>
+                            </div>
+                            <div class="price-tag">
+                                <span class="label">2 Day Access</span>
+                                <span class="amount">₹1200</span>
+                            </div>
+                            <a href="#" class="badge-btn">Coming Soon</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="side-events-section">
+            <div class="container">
+                <h2 class="section-heading text-center reveal">Events</h2>
+                <p class="section-desc reveal">Participate in workshops, hackathons, and fun events.</p>
+
+                <div class="events-grid">
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="./events/NCW.png" alt="Hackathon">
+                        </div>
+                        <h3>Coding Challenge</h3>
+                        <p>VISTA x GeeksforGeeks Coding Challenge</p>
+                        <a href="#" class="register-link">Coming Soon<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="./events/TS.png" alt="Wrokshop">
+                        </div>
+                        <h3>Workshop</h3>
+                        <p>VISTA x GeeksforGeeks Technical Workshop</p>
+                        <a href="#" class="register-link">Coming Soon <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=400" alt="E-Sports">
+                        </div>
+                        <h3>E-Sports</h3>
+                        <p>Competitive gaming tournament. Valorant & FIFA.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=400" alt="Idea Pitch">
+                        </div>
+                        <h3>Idea Pitch</h3>
+                        <p>Showcase your startup idea to a panel of investors.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=400" alt="Photography">
+                        </div>
+                        <h3>Photography</h3>
+                        <p>Capture the moments. Theme: Technology in Nature.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1614726365723-49cfae566164?auto=format&fit=crop&q=80&w=400" alt="Treasure Hunt">
+                        </div>
+                        <h3>Treasure Hunt</h3>
+                        <p>Solve clues and find the hidden treasure across campus.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&q=80&w=400" alt="Circuit Debug">
+                        </div>
+                        <h3>Circuit Debug</h3>
+                        <p>Test your electronics knowledge and fix the circuit.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="glass-card event-card reveal">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=400" alt="Paper Pres">
+                        </div>
+                        <h3>Paper Pres.</h3>
+                        <p>Present your technical research papers.</p>
+                        <a href="#" class="register-link">Register <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VISTA</h2>
+                    <p>Empowering student innovators to solve real-world problems through technology and engineering.</p>
+                    <p>Where <span style="color: #ffc800;">Project</span> Becomes <span style="color: #ffc800;">Product</span></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vista_ieee_sb_cek?igsh=MWxwNHlrbHJjN2tnZA=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 IEEE SB CEK. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="registration.js"></script>
+</body>
+</html>

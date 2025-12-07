@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue | VISTA</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Linked CSS File -->
+    <link rel="stylesheet" href="./styles/venue.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-transparent" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo-link">
+                <!-- Fallback logo logic -->
+                <img src="./assets/vista white.png" onerror="this.src='https://via.placeholder.com/150x50?text=VISTA'" alt="The VISTA" class="logo-image"> 
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="index.html#about" class="nav-item">About</a>
+                <a href="#" class="nav-item">Venue</a>
+                <a href="index.html#rewards" class="nav-item">Rewards</a>
+                <a href="registration.html" class="nav-btn">Register</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Container (Updated Structure) -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-nav-header">
+            <button class="close-menu-btn" id="close-menu-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <a href="index.html" class="nav-item mobile-link">Home</a>
+        <a href="index.html#about" class="nav-item mobile-link">About</a>
+        <a href="#" class="nav-item mobile-link">Venue</a>
+        <a href="index.html#rewards" class="nav-item mobile-link">Rewards</a>
+        <a href="#" class="nav-btn mobile-link">Register</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal active">
+            <h1 class="page-title">Venue & Directions</h1>
+            <p class="page-subtitle">Your guide to reaching the College of Engineering Karunagappally for The VISTA Innovation Challenge.</p>
+        </div>
+    </header>
+
+    <!-- Transport Section -->
+    <section class="section-transport">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2>How to Reach Us</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="transport-grid">
+                
+                <!-- Rail Card -->
+                <div class="transport-card reveal reveal-delay-1">
+                    <div class="t-icon icon-train">
+                        <i class="fa-solid fa-train"></i>
+                    </div>
+                    <h3 class="t-title">By Rail</h3>
+                    <div class="t-list">
+                        <div class="t-item">
+                            <span class="t-label">Karunagappally Station</span>
+                            <span class="t-dist">2.2 Km</span>
+                        </div>
+                        <div class="t-item">
+                            <span class="t-label">Kollam Junction</span>
+                            <span class="t-dist">27 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bus Card -->
+                <div class="transport-card reveal reveal-delay-2">
+                    <div class="t-icon icon-bus">
+                        <i class="fa-solid fa-bus"></i>
+                    </div>
+                    <h3 class="t-title">By Bus</h3>
+                    <div class="t-list">
+                        <div class="t-item">
+                            <span class="t-label">Karunagappally KSRTC</span>
+                            <span class="t-dist">3.8 Km</span>
+                        </div>
+                        <div class="t-item">
+                            <span class="t-label">Private Bus Stand</span>
+                            <span class="t-dist">4.0 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Air Card -->
+                <div class="transport-card reveal reveal-delay-3">
+                    <div class="t-icon icon-plane">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <h3 class="t-title">By Air</h3>
+                    <div class="t-list">
+                        <div class="t-item">
+                            <span class="t-label">Trivandrum (TRV)</span>
+                            <span class="t-dist">94 Km</span>
+                        </div>
+                        <div class="t-item">
+                            <span class="t-label">Cochin (COK)</span>
+                            <span class="t-dist">150 Km</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-map">
+        <div class="container">
+            <div class="map-wrapper reveal">
+                <div class="map-overlay">
+                    <h4>IEEE SB CEK</h4>
+                    <p>College of Engineering Karunagappally<br>Kollam, Kerala</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-map">Get Directions</a>
+                </div>
+                <!-- Embedded Google Map centered on CEK -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d984.9979512019602!2d76.5567130382352!3d9.064510116712915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1764407060463!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VISTA</h2>
+                    <p>Empowering student innovators to solve real-world problems through technology and engineering.</p>
+                    <p>Where <span style="color: #ffc800;">Project</span> Becomes <span style="color: #ffc800;">Product</span></p>
+                </div>
+                <!-- <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Rules</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vista_ieee_sb_cek?igsh=MWxwNHlrbHJjN2tnZA=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 IEEE SB CEK. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linked JS File -->
+    <script src="venue.js"></script>
+</body>
+</html>

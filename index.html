@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | VISTA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-transparent" id="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo-link">
+                <img src="./assets/vista white.png" onerror="this.src='https://via.placeholder.com/150x50?text=VISTA+White'" alt="The VISTA" class="logo-image logo-white"> 
+                <img src="./assets/vista black.png" onerror="this.src='https://via.placeholder.com/150x50?text=VISTA+Black'" alt="The VISTA" class="logo-image logo-black">
+            </a>
+            <div class="nav-links">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="venue.html" class="nav-item">Venue</a>
+                <a href="#rewards" class="nav-item">Rewards</a>
+                <a href="registration.html" class="nav-btn">Register</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-container" id="mobile-nav-container">
+        <div class="mobile-nav-header">
+            <button class="close-menu-btn" id="close-menu-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <a href="#" class="nav-item mobile-link">Home</a>
+        <a href="#about" class="nav-item mobile-link">About</a>
+        <a href="venue.html" class="nav-item mobile-link">Venue</a>
+        <a href="#rewards" class="nav-item mobile-link">Rewards</a>
+        <a href="registration.html" class="nav-btn mobile-link">Register</a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <h1 class="hero-title">
+                    Where <span class="text-secondary">Ideas</span> Meet <br> Opportunity
+                </h1>
+                <p class="hero-desc">
+                    The VISTA creates the ultimate stage for young innovators. Bring your boldest ideas and create global impact.
+                </p>
+                <div class="hero-buttons">
+                    <a href="registration.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container reveal reveal-delay-1">
+                <div class="blob blob-blue"></div>
+                <div class="blob blob-yellow"></div>
+                <img src="./assets/is.png" onerror="this.src='https://via.placeholder.com/500x500?text=Rocket+Image'" alt="Innovation Rocket" class="hero-img rocket-style">
+            </div>
+        </div>
+    </header>
+    
+    <section id="partners" class="section-partners">
+        <div class="partner-visuals">
+            <div class="p-grid"></div>
+            <div class="p-orb orb-1"></div>
+            <div class="p-orb orb-2"></div>
+            <div class="p-ring"></div>
+        </div>
+    
+        <div class="container text-center partner-content">
+            <h2 class="section-title reveal">Powered By</h2>
+            <div class="divider reveal"></div>
+            
+            <div class="partner-category reveal reveal-delay-2">
+                <h3 class="category-title">Technical Partner</h3>
+                
+                <div class="sponsor-grid">
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" class="partner-link-large">
+                        <img src="./sponsors/gfg.png" alt="GeeksForGeeks" class="sponsor-logo-large">
+                    </a>
+                </div>
+            </div>
+
+            <div class="sponsor-cta reveal reveal-delay-3">
+                <p class="cta-text">Want to showcase your brand at VISTA?</p>
+                <a href="sponsorship.html" class="btn btn-primary btn-sponsor">
+                    <i class="fa-solid fa-handshake"></i> Become a Sponsor
+                </a>
+            </div>
+            </div>
+    </section>
+    <section id="about" class="section-about">
+        <div class="container text-center">
+            <h2 class="section-title">About VISTA</h2>
+            <div class="divider"></div>
+            <p class="section-desc reveal">
+                The VISTA is a two day Industrial Summit by <span style="color: #0585ee;">IEEE SB CEK</span> in association with <span style="color: #0585ee;">IEEE IAS SBC CEK</span>, bringing together innovators, investors, and industries on one powerful platform. 
+                Designed to transform breakthrough ideas into real-world products, the event offers idea pitching opportunities, expos featuring robotics, drones, and emerging technologies.
+            </p>
+            
+            <div class="partners-row reveal reveal-delay-1">
+                <img src="./assets/ieeesbcek.png" onerror="this.style.display='none'" alt="IEEE SB CEK" class="partner-logo">
+                <img src="./assets/Collegenbg-01 - Copy.png" onerror="this.style.display='none'" alt="CEK" class="partner-logo">
+                <img src="./assets/ias_bw.png" onerror="this.style.display='none'" alt="IEEE IAS" class="partner-logo">
+                <img src="./assets/ieee blk.png" onerror="this.style.display='none'" alt="IEEE" class="partner-logo">
+            </div>
+
+            <div class="cards-grid">
+                <div class="card reveal reveal-delay-2">
+                    <div class="icon-circle icon-blue">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="card-title">Ideate</h3>
+                    <p class="card-text">Submit your groundbreaking concepts and get feedback from industry experts.</p>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                    <div class="icon-circle icon-green">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Build</h3>
+                    <p class="card-text">Develop your prototype with access to cutting-edge tools and mentorship.</p>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                    <div class="icon-circle icon-yellow">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="card-title">Win</h3>
+                    <p class="card-text">Showcase your solution at the Grand Finale and win massive prizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="section-venue">
+        <div class="container">
+            <div class="venue-grid">
+                <div class="venue-gallery reveal">
+                    <div class="gallery-grid">
+                        <div class="g-item g-1">
+                            <img src="./assets/aithon_sh.webp" onerror="this.src='https://via.placeholder.com/300?text=Event'" alt="Event Crowd">
+                        </div>
+                        <div class="g-item g-2">
+                            <img src="./assets/clg.webp" onerror="this.src='https://via.placeholder.com/300?text=College'" alt="Conference Hall">
+                        </div>
+                        <div class="g-item g-4">
+                            <img src="./assets/gbm.webp" onerror="this.src='https://via.placeholder.com/300?text=Students'" alt="Students">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="venue-content reveal reveal-delay-1">
+                    <span class="subheading">The Destination</span>
+                    <h2 class="main-heading">IEEE Student Branch <br> <span class="text-gradient">College of Engineering Karunagappally</span></h2>
+                    <p class="venue-desc">
+                        The VISTA brings you to IEEE SB CEK located in Kerala, a hub of culture and innovation. 
+                        Experience a convergence of tradition and technology in a venue designed to inspire creativity.
+                    </p>
+
+                    <div class="venue-highlight-box">
+                        <div class="vh-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="vh-text">
+                            <h4>Won Regional Exemplary Award 6 Times in a Row</h4>  
+                        </div>
+                    </div>
+
+                    <ul class="venue-features">
+                        <li><i class="fa-solid fa-circle-check"></i> India's first and only IEEE Club of 6 Technical Paper Conference</li>
+                        <li><i class="fa-solid fa-circle-check"></i> India's first National Level 24hr Electrical Illumination Hackathon</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cultural Showcases & Expos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Immersive Tech Workshops</li>
+                    </ul>
+
+                    <a href="venue.html" class="btn btn-primary btn-venue">View Venue Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rewards" class="section-rewards">
+        <div class="bg-shape"></div>
+        <div class="container">
+            <div class="rewards-grid">
+                <div class="trophy-container reveal">
+                    <div class="sunburst"></div>
+                    <div class="trophy-wrapper trophy-float">
+                        <i class="fa-solid fa-star star-1 star-twinkle"></i>
+                        <i class="fa-solid fa-star star-2 star-twinkle"></i>
+                        <i class="fa-solid fa-star star-3 star-twinkle"></i>
+                        <div class="trophy-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="trophy-base"></div>
+                    </div>
+                </div>
+
+                <div class="rewards-content">
+                    <div class="reveal reveal-delay-1">
+                        <h4 class="subheading">Rewards & Recognition</h4>
+                        <h2 class="main-heading">
+                            When ideas rise like kings, <br> <span class="text-gradient">Their rewards must follow.</span>
+                        </h2>
+                        <p class="desc-text">
+                            Get ready for The VISTA! We are here to support the best minds with financial backing and industry connections.
+                        </p>
+                    </div>
+                    <div class="line-divider reveal reveal-delay-2"></div>
+                    <div class="prize-card reveal reveal-delay-2">
+                        <div class="prize-amount"><span class="currency">Rs.</span>1L</div>
+                        <div>
+                            <h3 class="prize-title">Financial Support</h3>
+                            <p class="prize-desc">The VISTA will give <strong>Rs. 1,00,000</strong> as financial support for the best project idea.</p>
+                        </div>
+                    </div>
+                    <div class="prize-card reveal reveal-delay-3">
+                        <div class="prize-icon-wrap"><i class="fa-solid fa-handshake"></i></div>
+                        <div>
+                            <h3 class="prize-title">Sponsor Connect</h3>
+                            <p class="prize-desc">We will bridge the gap between talent and industry by connecting winning teams directly with <strong>Global Sponsors</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-delay-3 italic-msg">
+                        <p>Bring your boldest ideas—it's your moment to shine!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VISTA</h2>
+                    <p>Empowering student innovators to solve real-world problems through technology and engineering.</p>
+                    <p>Where <span style="color: #ffc800;">Project</span> Becomes <span style="color: #ffc800;">Product</span></p>
+                </div>
+                <!-- <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rules</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vista_ieee_sb_cek?igsh=MWxwNHlrbHJjN2tnZA=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 IEEE SB CEK. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
